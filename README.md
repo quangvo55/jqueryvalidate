@@ -1,8 +1,5 @@
-# random
-Random code files
-
-
-Dice sim output:
+Dice sim
+=================
 ```javascript
 simulate(100000);
 ```
@@ -28,3 +25,8 @@ simulate(100000);
 11 0.05606
 
 12 0.02749
+
+Probability Distribution
+--------------
+
+![alt tag](http://mathinsight.org/media/image/image/two_dice_distribution.png)
