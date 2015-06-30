@@ -8,19 +8,11 @@ function simulate(n) {
 	var diceRolls = {};
 
 	for (var i =0; i < n; i++) { 
-		var d1 = roll(); 
-		var d2 = roll(); 
-		var num = d1 + d2;
-		if (!diceRolls[num]) {
-			diceRolls[num] = 1;
-		} else {
-			diceRolls[num]++;
-		}
+		var num = roll() + roll();
+		(!diceRolls[num]) ? diceRolls[num] = 1 : diceRolls[num]++;
 	}
 
 	for (var key in diceRolls) { if (diceRolls.hasOwnProperty(key)) { console.log(key + " " + diceRolls[key]/n) }}
 
 	return diceRolls;
 }
-
-
